@@ -5,11 +5,13 @@ import { HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ServiceService} from './service.service';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent
+    ProfileComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
