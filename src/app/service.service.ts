@@ -18,7 +18,7 @@ getProfileInfo(){
   //  .map(res =>res.json());
 }
 getProfileRepos(){
-  return this.http.get("https://api.github.com/users/" + this.username + "/repos/")
+  return this.http.get("https://api.github.com/users/repos/" + this.username)
 
 }
 }

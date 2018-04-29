@@ -9,13 +9,13 @@
     <div class="panel-body">
       <div class="row">
         <div class="col-sm-3">
-          <img src="[{{profile.avatar_url}}]" class="img-circle img-responsive" alt="Profile Image">
+          <img src="{{profile.avatar_url}}" class="img-circle img-responsive" alt="Profile Image">
         </div>
       </div>
       <div class="col-sm-5">
         <ul class="list-group">
           <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
-          <li class="list-group-item" *ngIf="profile.hireable">{{profile.hireable}}</li>
+          <li class="list-group-item" *ngIf="profile.hireable"> Available for hire</li>
           <li class="list-group-item" *ngIf="profile.blog">{{profile.blog}}</li>
           <li class="list-group-item" *ngIf="profile.email">
             <a href="emailto:{{profile.email}}">{{profile.email}}</a>
@@ -26,7 +26,7 @@
       <div class="col-sm-4">
         <div>
           <p>
-            <span class="label label-primary">{{profile.followers}} Followers</span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+            <span class="label label-primary">{{profile.followers}} Followers</span>
             <span class="label label-success">{{profile.following}} Following</span>
             <span class="label label-secondary">{{profile.public_gists}} Public Gists</span>
             <span class="label label-info">{{profile.public_repos}} Public Repos</span>
@@ -39,11 +39,13 @@
               <h3 class="panel-title">Repos</h3>
             </div>
             <div class="panel-body" *ngFor="let repo of repos">
-              <p>{{repo.name}}<a href="{{repo.html_url}}" class="btn btn-sm btn-warning"> View this project on github</a>
-              {{repo.description}}
-              </p>
-            </div>
-          </div>
+              <p>{{repo.name}}
+                <a href="{{repo.html_url}}" class="btn btn-sm btn-warning"> View this project on github</a>
+               
+              <p> 
+                <p>{{repo.description}}</p>
+            </div> 
+          </div> 
         </div>
       </div>
     </div>
