@@ -9,9 +9,12 @@ import{ ServiceService} from '../service.service';
 export class ProfileComponent implements OnInit {
  profile: any;
  repos:any;
+ username:string;
 
-  constructor(private serviceservice: ServiceService) { 
-    // this.serviceservice.updateProfile(this.username);
+  constructor(private serviceservice: ServiceService) { }
+  Search(){
+        this.serviceservice.updateProfile(this.username);
+
     this.serviceservice.getProfileInfo().subscribe(profile =>{
       console.log(profile);
       this.profile = profile;
@@ -22,6 +25,9 @@ export class ProfileComponent implements OnInit {
       this.repos = repos;
     });
   }
+    
+  
+ 
 
   ngOnInit() {
   }

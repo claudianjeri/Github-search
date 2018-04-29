@@ -1,7 +1,14 @@
-<div class="container">
-  <app-form> </app-form>
+<div class="jumbotron">
+  <div class="container">
+    <h1>Github Search</h1>
+    <form action="" class="search-form">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search for user, repository, etc..." [(ngModel)]="username" name="username"
+          (keyup)="Search()">
+      </div>
+    </form>
+  </div>
 </div>
-
 <div *ngIf="profile">
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -44,12 +51,12 @@
             </div>
             <div class="panel-body" *ngFor="let repo of repos">
               <p class="clearfix">{{repo.name}}
-                <a href="{{repo.html_url}}" class="btn btn-sm btn-warning" > View this project on github</a>
-               
-              <p> 
-                <p>{{repo.description}}</p>
-            </div> 
-          </div> 
+                <a href="{{repo.html_url}}" class="btn btn-sm btn-warning"> View this project on github</a>
+
+                <p>
+                  <p>{{repo.description}}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
