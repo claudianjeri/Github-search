@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import{ ServiceService} from '../service.service';
-
+import {User } from '../user';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
- profile: any;
+// profile:any;
  repos:any;
  username:string;
 
@@ -17,7 +17,7 @@ export class ProfileComponent implements OnInit {
 
     this.serviceservice.getProfileInfo().subscribe(profile =>{
       console.log(profile);
-      this.profile = profile;
+      profile = profile;
     });
 
     this.serviceservice.getProfileRepos().subscribe(repos => {
