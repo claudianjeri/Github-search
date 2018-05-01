@@ -2,7 +2,8 @@
   width: 100%;
   height: 600px;
   -webkit-linear-gradient: (top, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
-  
+  background-position: center;
+  background-size: cover;
 }
 
 h1 {
@@ -17,3 +18,11 @@ h1 {
   text-shadow: 0 1px 1px #fff;
 }
 
+.panel-heading{
+  font-size: 20px;
+}
+
+#follow{
+  float:right;
+  margin-bottom: 30px;
+}

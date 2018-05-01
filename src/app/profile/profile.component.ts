@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import{ ServiceService} from '../service.service';
 import {User } from '../user';
 import { Repository} from '../repository';
+
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -18,7 +19,7 @@ profile:any;
 
     this.serviceservice.getProfileInfo().subscribe(profile =>{
       console.log(profile);
-      profile = profile;
+      this.profile = profile;
     });
 
     this.serviceservice.getProfileRepos().subscribe(repos => {

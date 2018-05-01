@@ -1,16 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
-// import 'rxjs/add/operator/map';
 
 @Injectable()
 export class ServiceService {
   private username: string;
-  private clientid ='';
-  private clientsecret='';
+  repos:any;
 
   constructor(private http:HttpClient) { 
-  console.log("service is now ready");
-  this.username = "claudianjeri";
 }
 
 getProfileInfo(){
