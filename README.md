@@ -1,9 +1,18 @@
-# Gitsearch
+# Gitsearch Application
+###### by Claudia.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
+## Description and application behaviour:
+Its my Moringa School project. Its an application that allows a user to:
+> * To search for a username/profile that has already signed in Github. Together with their information, i.e, their bio and where they work.
+> * To view someone's repos.
+> * To see the the person's followers, the ones he/she follows and public gists.
+> * To view their profile on github
 
-## Development server
+## Technology used:
+This application was generated with Angular CLI version 1.6.8.
+It uses bootstrap, css and javascript for styling.
 
+## Development server :
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
