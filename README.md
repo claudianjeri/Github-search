@@ -8,6 +8,13 @@ Its my Moringa School project. Its an application that allows a user to:
 > * To see the the person's followers, the ones he/she follows and public gists.
 > * To view their profile on github
 
+##Known Bugs:
+None that has been discovered.
+
+##Setup/Installation Requirements:
+> * install Atom, Sublime or Visual Studio.
+> * Run the app on Google Chrome.
+
 ## Technology used:
 This application was generated with Angular CLI version 1.6.8.
 It uses bootstrap, css and javascript for styling.

@@ -1,15 +1,15 @@
 .jumbotron {
   width: 100%;
-  height: 600px;
+  height: 400px;
   -webkit-linear-gradient: (top, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 h1 {
   color: #d54d7b;
   font-family: "Great Vibes", cursive;
-  font-size: 165px;
+  font-size: 120px;
   line-height: 160px;
   font-weight: normal;
   margin-bottom: 0px;
@@ -52,4 +52,3 @@ h1 {
 
 
 /* Demo backgrounds and styling*/
-

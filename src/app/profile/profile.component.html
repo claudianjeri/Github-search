@@ -57,10 +57,13 @@
     </div>
   </div>
   <!-- <div class="col-md-4 col-sm-6 col-xs-12"> -->
-  <h3>Repos</h3>
   <div class="rows">
+
     <div class="col-sm-4" id="repos">
       <div class="card" *ngFor="let repo of repos">
+        <h3>
+          <strong>PROFILE</strong>
+        </h3>
         <p class="card-header">{{repo.name}}</p>
         <div class="card-body">
           <p class="card-text">{{repo.description}}</p>
