@@ -8,36 +8,29 @@ Its my Moringa School project. Its an application that allows a user to:
 > * To see the the person's followers, the ones he/she follows and public gists.
 > * To view their profile on github
 
-##Known Bugs:
-None that has been discovered.
+## Known Bugs.
+> * There are no known bugs. If found, contact me at claudianjeri04@gmail.com
 
-##Setup/Installation Requirements:
-> * install Atom, Sublime or Visual Studio.
-> * Run the app on Google Chrome.
+## Setup/Installation Requirements
+###### Requirements
+- npm (latest version)
+- visual studio or atom
+- terminal. (sublime, git bash)
+> * Clone the project from [here](https://github.com/claudianjeri/quotes)
+> * Navigate to the folder with the project using the terminal.
+> * Run ng serve in your terminal.
+> * Once its done compling on the terminal,
+open http://localhost:4200/
 
 ## Technology used:
 This application was generated with Angular CLI version 1.6.8.
 It uses bootstrap, css and javascript for styling.
 
-## Development server :
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Support and contact details
+> * Email Address: claudianjeri04@gmail.com
 
-## Code scaffolding
+## License and terms of use
+> * MIT LICENSE
+> * This application's source code is free for any open source project.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+> © Claudia Njeri| Credits [Moringa School](https://moringaschool.com/) 
